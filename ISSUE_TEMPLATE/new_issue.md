@@ -1,5 +1,5 @@
 ---
-name: Issue template
+name: New issue template
 about: Create an issue to help us improve
 ---
 
