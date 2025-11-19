@@ -1,0 +1,41 @@
+name: New Issue
+description: Create an issue to help us improve
+title: ''
+labels: []
+assignees: []
+body:
+  - type: input
+    id: subject
+    attributes:
+      label: Subject of the issue/enhancement/features
+      description: Briefly describe what this issue is about.
+      placeholder: "Describe your issue here."
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Your environment
+      description: Specify AT/Framework version, browser and its version, device(s), and operating system(s).
+      placeholder: "List environment details here."
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Tell us how to reproduce this issue.
+      placeholder: "List exact steps here."
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: Tell us what should happen.
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+      description: Tell us what happens instead.
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Add screenshots if you can.
