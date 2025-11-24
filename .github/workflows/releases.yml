@@ -1,5 +1,4 @@
 name: Release Workflow
-
 on:
   workflow_call:
     inputs:
@@ -8,7 +7,6 @@ on:
         required: false
         type: string
         default: 'lts/*'
-
 jobs:
   release:
     name: Release
