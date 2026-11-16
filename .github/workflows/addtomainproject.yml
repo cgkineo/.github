@@ -18,7 +18,10 @@ jobs:
         id: app-token
         uses: actions/create-github-app-token@v3
         with:
-          client-id: ${{ vars.ADDTOPROJECT_APP_CLIENT_ID }}
+          # Org variables and secrets don't reach private repos on our plan.
+          # The client ID is public, so it lives here. Each private repo needs
+          # its own ADDTOPROJECT_APP_KEY repository secret.
+          client-id: Iv23liYjrssmnH2oUCuJ
           private-key: ${{ secrets.ADDTOPROJECT_APP_KEY }}
           owner: cgkineo
       - uses: actions/add-to-project@v2.0.0
